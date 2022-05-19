@@ -32,7 +32,7 @@ public class ob_ej4 {
 
         // Para el bucle Do While, deberás crear la misma estructura que en el While, pero solo se debe ejecutar una vez.
         
-        int numeroDoWhile = 3;
+        int numeroDoWhile = 1;
         do{
             numeroDoWhile++;
             System.out.println("La variable numeroDoWhile ahora vale: " + numeroDoWhile);
