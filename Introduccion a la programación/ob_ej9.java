@@ -1,0 +1,46 @@
+public class ob_ej9 {
+
+    public static void main(String[] args) {
+
+// Crea un objeto de la clase Cliente que debe tener como propiedades la edad, el telefono, el nombre y el credito, tienes que darles valor y mostrarlas por pantalla.
+
+        Cliente cliente = new Cliente();
+        Trabajador trabajador = new Trabajador();
+        cliente.edad = 44;
+        cliente.telefono = 1150212981;
+        cliente.nombre = "Guillermo";
+        cliente.credito = 10500.85;
+        System.out.println("Tengo " + cliente.edad + " años. Mi telefono es " + cliente.telefono
+        + ". Soy " + cliente.nombre + " y mi credito disponible es " + "$ " + cliente.credito );
+
+        trabajador.nombre = "Valentino";
+        trabajador.edad = 25;
+        trabajador.telefono = 1126522512;
+        trabajador.salario = 1250.25;
+        System.out.println("Tengo " + trabajador.edad + " años. Mi telefono es " + trabajador.telefono + ". Soy " + trabajador.nombre + " y mi salario es de " + "$ " + trabajador.salario ); 
+
+    }
+}
+
+// Crea una clase Persona con las siguientes variables:
+// edad
+// nombre
+//teléfono
+
+class Persona{
+    int edad;
+    String nombre;
+    int telefono;
+}
+
+// Una vez creada la clase, crea una nueva clase Cliente que herede de Persona, esta nueva clase tendrá la variable credito solo para esa clase.
+
+class Cliente extends Persona{
+    double credito;
+}
+
+// Una vez hecho esto, haz lo mismo con la clase Trabajador que herede de Persona, y con una variable salario que solo tenga la clase Trabajador.
+
+class Trabajador extends Persona{
+    double salario;
+}
