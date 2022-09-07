@@ -1,9 +1,19 @@
+*   {
+    background-color: lightskyblue;
+}
+
+h1  {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkblue;
+}
+
 img {
-    height: 300px;
+    height: 250px;
 }
 
 img.detalle {
-    height: 250px;
+    height: 200px;
 }
 
 table {
@@ -15,7 +25,7 @@ td{
 }
 
 main {
-    width: 95%;
+    width: 90%;
     text-align: justify;
     margin: auto;
 }
