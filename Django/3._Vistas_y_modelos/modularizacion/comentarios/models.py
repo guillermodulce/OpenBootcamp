@@ -1,4 +1,3 @@
-from pyclbr import Class
 from django.db import models
 
 class comments(models.Model):
