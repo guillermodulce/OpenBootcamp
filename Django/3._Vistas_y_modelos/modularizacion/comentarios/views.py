@@ -15,4 +15,4 @@ def delete(request):
     #comment = Comment.objects.get(id=1)
     #comment.delete()
     Comment.objects.filter(id=2).delete()
-    return HttpResponse("Ruta para probar los borrados")
+    return HttpResponse("Ruta para probar los borrados")  
