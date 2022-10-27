@@ -11,3 +11,10 @@ class ContactForm(forms.Form):
     email = forms.EmailField(label="Email", max_length=50, widget=forms.EmailInput(attrs={'class': 'form-control'}))
     message = forms.CharField(label="Mensaje", widget=forms.Textarea(attrs={'class': 'form-control'}))
     
+    def clean_name(self):
+        name = self.cleaned_data.get("name")
+        if name != "Open":
+            raise forms.ValidationError("Sólo el valor Open está permitido para este campo")
+        else:
+            return name
+             
