@@ -1,0 +1,11 @@
+{% extends 'layout/base.html' %}
+
+{% block 'title' %} Contactos {% endblock %}
+
+{% block 'content' %}
+<ul class="list">
+    {% for contact in contacts %}
+    <li>{{ contact }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
